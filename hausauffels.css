@@ -1,0 +1,299 @@
+.w-editor .preloader {
+  display: none !important;
+}
+.splide__sr {
+  display: none;
+}
+.fc-daygrid-day-events {
+  display: none !important;
+}
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 2em !important;
+}
+/* общий блок навигации */
+.fc-toolbar-chunk {
+  display: flex !important;
+  align-items: center !important;
+}
+/* кнопка - текущий день */
+.fc-today-button {
+  color: var(--color--white) !important;
+  background-color: var(--color--dark) !important;
+  border: none !important;
+  border-radius: 100em !important;
+  font-size: var(--font-size--text-40) !important;
+  line-height: var(--line-height--120) !important;
+  font-weight: var(--font-weight--medium) !important;
+  letter-spacing: var(--letter-spacing--6) !important;
+  padding: 0.25em 0.9em 0.25em 0.9em !important;
+  transition: all 300ms ease;
+}
+.fc-today-button:disabled {
+  opacity: 1 !important;
+  background-color: var(--color--grey) !important;
+}
+/* наименование месяца */
+.fc-toolbar-title {
+  line-height: var(--line-height--120) !important;
+  font-size: var(--font-size--text-40) !important;
+  letter-spacing: var(--letter-spacing--6) !important;
+  width: 1.8em;
+  margin-left: 0em !important;
+}
+/* кнопки навигации */
+.fc-nextcustom-button {
+  margin-left: 0.8em !important;
+  line-height: var(--line-height--0) !important;
+  border: none !important;
+  padding: 0 !important;
+  background-color: var(--color--transparent) !important;
+  font-size: inherit !important;
+  color: var(--color--dark) !important;
+  transition: all 300ms ease;
+}
+.fc-nextcustom-button svg {
+  line-height: 0 !important;
+  width: 4em !important;
+  height: 4em !important;
+  font-size: inherit !important;
+}
+.fc-prevcustom-button {
+  margin-left: 1em !important;
+  margin-right: 0.8em !important;
+  line-height: var(--line-height--0) !important;
+  border: none !important;
+  padding: 0 !important;
+  background-color: var(--color--transparent) !important;
+  font-size: inherit !important;
+  color: var(--color--dark) !important;
+  transition: all 300ms ease;
+}
+.fc-prevcustom-button svg {
+  line-height: 0 !important;
+  width: 4em !important;
+  height: 4em !important;
+  font-size: inherit !important;
+}
+.fc-prevcustom-button:disabled {
+  opacity: 1 !important;
+  color: var(--color--grey) !important;
+}
+.fc-prevcustom-button:focus {
+  box-shadow: var(--color--transparent) !important;
+}
+.fc-nextcustom-button:focus {
+  box-shadow: var(--color--transparent) !important;
+}
+/* стилизация disabled кнопок */
+button[disabled],
+html input[disabled] {
+  cursor: not-allowed !important;
+}
+/* убираем сетку */
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border: none !important;
+}
+.fc-theme-standard .fc-scrollgrid {
+  border: none !important;
+}
+/* наименование дня недели */
+.fc-col-header-cell-cushion {
+  padding: 0 !important;
+  font-size: var(--font-size--text-24) !important;
+  line-height: var(--line-height--120) !important;
+  font-weight: var(--font-weight--medium) !important;
+  letter-spacing: var(--letter-spacing--3) !important;
+  padding-bottom: 0.416em !important;
+}
+.fc-col-header-cell {
+  padding-left: 0.5em !important;
+}
+.fc th {
+  text-align: left;
+}
+/* день в календаре */
+.fc-daygrid-day-frame {
+  display: flex;
+  background-color: var(--color--frost) !important;
+  height: 10em !important;
+  border-radius: 3em !important;
+  align-items: center;
+  justify-content: center;
+}
+.fc-daygrid-day {
+  padding: 1em 0.5em 0 0.5em !important;
+}
+/* start текущий день */
+.fc .fc-daygrid-day.fc-day-today {
+  background-color: var(--color--transparent) !important;
+}
+.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-frame {
+}
+.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-number {
+  box-shadow: inset rgb(0 0 0) 0px -0.08em 0px 0px !important;
+}
+/* end текущий день */
+.fc-day-mon {
+  padding-left: 0em !important;
+}
+.fc-day-sun {
+  padding-right: 0em !important;
+}
+.fc-daygrid-day-number {
+  font-size: var(--font-size--text-40) !important;
+  line-height: var(--line-height--120) !important;
+  letter-spacing: var(--letter-spacing--6) !important;
+  font-weight: var(--font-weight--medium) !important;
+  padding: 0 !important;
+}
+/* неактивный день в календаре */
+.fc .fc-day-disabled {
+  background: var(--color--transparent) !important;
+}
+/* День с событием */
+.has-event-day .fc-daygrid-day-frame {
+  cursor: pointer;
+  background-color: var(--color--deep-grey) !important;
+  color: var(--color--white) !important;
+}
+.fc .fc-daygrid-day.fc-day-today.has-event-day .fc-daygrid-day-number {
+  box-shadow: inset rgb(255, 255, 255) 0px -0.08em 0px 0px !important;
+}
+/* Блокируем скролл фона, когда открыт диалог */
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
+/* Плавности */
+dialog[open] {
+  opacity: 1;
+}
+dialog {
+  padding: 2em 0 2em 0 !important;
+  margin: auto auto auto auto !important;
+  border: 0px transparent !important;
+  max-height: 100vh !important;
+  opacity: 0;
+  transition: all 0.5s allow-discrete;
+}
+@starting-style {
+  dialog:open {
+    opacity: 0;
+  }
+}
+
+/* Подложка */
+dialog::backdrop {
+  background-color: rgba(10, 120, 207, 0);
+  transition: all 0.7s allow-discrete;
+}
+dialog[open]::backdrop {
+  background-color: var(--color--frost-20);
+  backdrop-filter: blur(0.2em);
+}
+@starting-style {
+  dialog[open]::backdrop {
+    background-color: var(--color--transparent) !important;
+  }
+}
+/* MOBILE */
+@media screen and (max-width: 479px) {
+  /* кнопка - текущий день */
+  .fc-today-button {
+    color: var(--color--white) !important;
+    background-color: var(--color--dark) !important;
+    border: none !important;
+    border-radius: 100em !important;
+    font-size: var(--font-size--text-16) !important;
+    line-height: var(--line-height--119) !important;
+    font-weight: var(--font-weight--medium) !important;
+    letter-spacing: var(--letter-spacing--3) !important;
+    padding: 0.312em 1.375em 0.312em 1.375em !important;
+    transition: all 300ms ease;
+    order: 1 !important;
+  }
+  .fc-today-button:disabled {
+    opacity: 1 !important;
+    background-color: var(--color--grey) !important;
+  }
+  /* наименование месяца */
+  .fc-toolbar-title {
+    line-height: var(--line-height--120) !important;
+    font-size: var(--font-size--text-16) !important;
+    letter-spacing: var(--letter-spacing--1) !important;
+    width: 2em;
+    margin-left: 0em !important;
+  }
+  /* кнопки навигации */
+  .fc-nextcustom-button {
+    margin-left: 0.2em !important;
+    line-height: var(--line-height--0) !important;
+    border: none !important;
+    padding: 0 !important;
+    background-color: var(--color--transparent) !important;
+    font-size: inherit !important;
+    color: var(--color--dark) !important;
+    transition: all 300ms ease;
+  }
+  .fc-nextcustom-button svg {
+    line-height: 0 !important;
+    width: 2.5em !important;
+    height: 2.5em !important;
+    font-size: inherit !important;
+  }
+  .fc-prevcustom-button {
+    margin-left: 0em !important;
+    margin-right: 0.2em !important;
+    line-height: var(--line-height--0) !important;
+    border: none !important;
+    padding: 0 !important;
+    background-color: var(--color--transparent) !important;
+    font-size: inherit !important;
+    color: var(--color--dark) !important;
+    transition: all 300ms ease;
+  }
+  .fc-prevcustom-button svg {
+    line-height: 0 !important;
+    width: 2.5em !important;
+    height: 2.5em !important;
+    font-size: inherit !important;
+  }
+  /* общий блок навигации */
+  .fc-toolbar-chunk {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    row-gap: 0.5em !important;
+    width: 9em !important;
+    justify-content: flex-end !important;
+  }
+  .fc-daygrid-day-number {
+    font-size: var(--font-size--text-16) !important;
+    letter-spacing: var(--letter-spacing--1) !important;
+  }
+  /* день в календаре */
+  .fc-daygrid-day-frame {
+    display: flex;
+    background-color: var(--color--frost) !important;
+    height: 5em !important;
+    border-radius: 1.6em !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .fc-daygrid-day {
+    padding: 0.5em 0.25em 0 0.25em !important;
+  }
+  /* наименование дня недели */
+  .fc-col-header-cell-cushion {
+    padding: 0 !important;
+    font-size: var(--font-size--text-16) !important;
+    line-height: var(--line-height--120) !important;
+    font-weight: var(--font-weight--medium) !important;
+    letter-spacing: var(--letter-spacing--1) !important;
+    padding-bottom: 0.4375em !important;
+  }
+  .fc-col-header-cell {
+    padding-left: 0.5em !important;
+  }
+}
